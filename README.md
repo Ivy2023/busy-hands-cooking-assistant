@@ -35,7 +35,7 @@ Reads the ingredients field.
 
 Uses parse_ingredients and find_matching_recipes.
 
-Handles:
+# Handles:
 
 ValueError for validation issues (user-friendly message).
 
@@ -61,33 +61,33 @@ This improves user experience and demonstrates exception handling.
 ## Manual testing procedures
 You can validate the code manually with the following tests:
 
-Normal input:
+# Normal input:
 
 Input: rice, garlic
 
 Expected: At least one recipe (e.g. “Garlic Fried Rice”) is shown.
 
-Multiple ingredients:
+# Multiple ingredients:
 
 Input: eggs, tomato, cheese
 
 Expected: “Vegetable Omelette” appears with matched ingredients listed.
 
-Empty input:
+# Empty input:
 
 Input: (leave the field empty and submit)
 
 Expected: Error message “No ingredients provided.”
 
-Only commas / spaces:
+# Only commas / spaces:
 
 Input: , , ,
 
 Expected: Error message “No valid ingredients found in the input.”
 
-No matching recipes:
+# No matching recipes:
 
-Input: strawberries
+Input: strawberries , chocolate
 
 Expected: Message that no recipes were found.
 
@@ -95,7 +95,7 @@ Unexpected error simulation (optional):
 
 Temporarily raise an exception inside find_matching_recipes and confirm the generic error message appears.
 
-Coding style and linting
+## Coding style and linting
 The code follows PEP 8 style guidelines:
 
 Meaningful variable and function names
@@ -106,17 +106,17 @@ Line length kept reasonable
 
 ## Running the application locally
 
-#1 Clone or download the repository:
-#2 (Optional) Create and activate a virtual environment:
+# 1 Clone or download the repository:
+# 2 (Optional) Create and activate a virtual environment:
 python -m venv venv
 Windows
 venv\Scripts\activate
 macOS / Linux
 source venv/bin/activate
-#3 Install dependencies:
+# 3 Install dependencies:
 pip install flask
-#4 run the app:
-#5 Open your browser and go to:
+# 4 run the app:
+# 5 Open your browser and go to:
 (http://127.0.0.1:5000/
 )
 
