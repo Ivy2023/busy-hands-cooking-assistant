@@ -33,6 +33,7 @@ cooking-assistant/
 └── templates/
     └── index.html    # HTML template for the web interface
 
+---
 
 ## Web flow
 app.py defines a single route / that accepts GET and POST.
@@ -68,7 +69,7 @@ Unexpected errors are caught in app.py and shown as:
 
 This improves user experience and demonstrates exception handling.
 
-Manual testing procedures
+## Manual testing procedures
 You can validate the code manually with the following tests:
 
 Normal input:
@@ -97,7 +98,7 @@ Expected: Error message “No valid ingredients found in the input.”
 
 No matching recipes:
 
-Input: chocolate, strawberries
+Input: strawberries
 
 Expected: Message that no recipes were found.
 
@@ -113,4 +114,20 @@ Meaningful variable and function names
 Consistent indentation (4 spaces)
 
 Line length kept reasonable
+
+## Running the application locally
+
+#1 Clone or download the repository:
+#2 (Optional) Create and activate a virtual environment:
+python -m venv venv
+Windows
+venv\Scripts\activate
+macOS / Linux
+source venv/bin/activate
+#3 Install dependencies:
+pip install flask
+#4 run the app:
+#5 Open your browser and go to:
+(http://127.0.0.1:5000/
+)
 
