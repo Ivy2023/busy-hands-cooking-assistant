@@ -24,17 +24,6 @@ This project demonstrates:
 
 ---
 
-## Project structure
-
-```text
-cooking-assistant/
-├── main.py            # Flask app, routes, and web flow
-├── recipes_data.py   # Data model and business logic (application-specific)
-└── templates/
-    └── index.html    # HTML template for the web interface
-
----
-
 ## Web flow
 app.py defines a single route / that accepts GET and POST.
 
@@ -130,4 +119,15 @@ pip install flask
 #5 Open your browser and go to:
 (http://127.0.0.1:5000/
 )
+
+## Project structure
+
+```text
+cooking-assistant/
+├── main.py            # Flask app, routes, and web flow
+├── recipes_data.py   # Data model and business logic (application-specific)
+└── templates/
+    └── index.html    # HTML template for the web interface
+
+---
 
